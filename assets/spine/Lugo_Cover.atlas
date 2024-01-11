@@ -1,0 +1,48 @@
+
+Lugo_Cover.png
+size: 959,673
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_left
+  rotate: 270
+  xy: 569, 1
+  size: 167, 308
+  orig: 167, 308
+  offset: 0, 0
+  index: -1
+arm_right
+  rotate: true
+  xy: 0, 30
+  size: 206, 273
+  orig: 206, 273
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 0, 7
+  size: 912, 667
+  orig: 912, 667
+  offset: 0, 0
+  index: -1
+eye_left
+  rotate: false
+  xy: 0, 574
+  size: 102, 101
+  orig: 102, 101
+  offset: 0, 0
+  index: -1
+eye_right
+  rotate: false
+  xy: 0, 489
+  size: 88, 87
+  orig: 88, 87
+  offset: 0, 0
+  index: -1
+face_shield
+  rotate: true
+  xy: 719, 328
+  size: 344, 240
+  orig: 344, 240
+  offset: 0, 0
+  index: -1

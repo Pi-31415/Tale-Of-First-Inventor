@@ -1,0 +1,153 @@
+
+Lin_Cover.png
+size: 800,2036
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blushes
+  rotate: false
+  xy: 465, 3
+  size: 182, 16
+  orig: 182, 16
+  offset: 0, 0
+  index: -1
+body
+  rotate: 270
+  xy: 0, 307
+  size: 675, 525
+  orig: 675, 525
+  offset: 0, 0
+  index: -1
+bow
+  rotate: false
+  xy: 414, 258
+  size: 210, 99
+  orig: 210, 99
+  offset: 0, 0
+  index: -1
+ear
+  rotate: false
+  xy: 422, 1573
+  size: 87, 157
+  orig: 87, 157
+  offset: 0, 0
+  index: -1
+eye_left
+  rotate: false
+  xy: 0, 1913
+  size: 67, 61
+  orig: 67, 61
+  offset: 0, 0
+  index: -1
+eye_right
+  rotate: false
+  xy: 423, 1720
+  size: 56, 61
+  orig: 56, 61
+  offset: 0, 0
+  index: -1
+eyebrow_left
+  rotate: false
+  xy: 167, 2014
+  size: 93, 23
+  orig: 93, 23
+  offset: 0, 0
+  index: -1
+eyebrow_right
+  rotate: false
+  xy: 50, 1955
+  size: 67, 28
+  orig: 67, 28
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 51, 2
+  size: 315, 450
+  orig: 315, 450
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: false
+  xy: 0, 970
+  size: 437, 1067
+  orig: 437, 1067
+  offset: 0, 0
+  index: -1
+hair_front
+  rotate: 180
+  xy: 407, 949
+  size: 392, 413
+  orig: 392, 413
+  offset: 0, 0
+  index: -1
+iris_left
+  rotate: false
+  xy: 0, 1863
+  size: 38, 50
+  orig: 38, 50
+  offset: 0, 0
+  index: -1
+iris_right
+  rotate: false
+  xy: 424, 1783
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+mouth_happy
+  rotate: false
+  xy: 0, 1975
+  size: 97, 62
+  orig: 97, 62
+  offset: 0, 0
+  index: -1
+mouth_neutral
+  rotate: false
+  xy: 387, 3
+  size: 76, 30
+  orig: 76, 30
+  offset: 0, 0
+  index: -1
+mouth_scream
+  rotate: false
+  xy: 457, 21
+  size: 97, 50
+  orig: 97, 50
+  offset: 0, 0
+  index: -1
+mouth_teeth_grind
+  rotate: false
+  xy: 88, 1996
+  size: 88, 40
+  orig: 88, 40
+  offset: 0, 0
+  index: -1
+mouth_uncomfortable
+  rotate: false
+  xy: 416, 939
+  size: 90, 40
+  orig: 90, 40
+  offset: 0, 0
+  index: -1
+mouth_unhappy
+  rotate: false
+  xy: 406, 2003
+  size: 78, 34
+  orig: 78, 34
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 422, 1355
+  size: 191, 221
+  orig: 191, 221
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 0, 1622
+  size: 33, 77
+  orig: 33, 77
+  offset: 0, 0
+  index: -1

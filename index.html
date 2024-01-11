@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lugo and Lin</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" as="font" crossorigin="anonymous" href="assets/fonts/MonsieurLaDoulaise-Regular.ttf"
+        type="font/ttf" />
+    <link rel="preload" as="font" crossorigin="anonymous" href="assets/fonts/Tangerine_Bold.ttf" type="font/ttf" />
+    <link rel="preload" as="font" crossorigin="anonymous" href="assets/fonts/Tangerine_Regular.ttf" type="font/ttf" />
+    <!-- import edosz.ttf -->
+    <link rel="preload" as="font" crossorigin="anonymous" href="assets/fonts/edosz.ttf" type="font/ttf" />
+    <!-- Import Timeless.ttf -->
+    <link rel="preload" as="font" crossorigin="anonymous" href="assets/fonts/Timeless.ttf" type="font/ttf" />
+    <style type="text/css">
+        @font-face {
+            font-family: MonsieurLaDoulaise-Regular;
+            src: url('./assets/fonts/edosz.ttf');
+        }
+
+        @font-face {
+            font-family: Tangerine_Bold;
+            src: url('./assets/fonts/edosz.ttf');
+        }
+        /* Decalre Timeless.ttf */
+        @font-face {
+            font-family: Timeless;
+            src: url('./assets/fonts/Timeless.ttf');
+        }
+
+        @font-face {
+            font-family: Tangerine_Regular;
+            src: url('./assets/fonts/edosz.ttf');
+        }
+
+        body {
+            background: #000000;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Tangerine_Regular', 'MonsieurLaDoulaise-Regular', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        #loading-screen {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            background-color: #000000;
+            user-select: none;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #item {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .lds-grid {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-grid div {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #ffffff;
+            animation: lds-grid 1.2s linear infinite;
+        }
+
+        .lds-grid div:nth-child(1) {
+            top: 8px;
+            left: 8px;
+            animation-delay: 0s;
+        }
+
+        .lds-grid div:nth-child(2) {
+            top: 8px;
+            left: 32px;
+            animation-delay: -0.4s;
+        }
+
+        .lds-grid div:nth-child(3) {
+            top: 8px;
+            left: 56px;
+            animation-delay: -0.8s;
+        }
+
+        .lds-grid div:nth-child(4) {
+            top: 32px;
+            left: 8px;
+            animation-delay: -0.4s;
+        }
+
+        .lds-grid div:nth-child(5) {
+            top: 32px;
+            left: 32px;
+            animation-delay: -0.8s;
+        }
+
+        .lds-grid div:nth-child(6) {
+            top: 32px;
+            left: 56px;
+            animation-delay: -1.2s;
+        }
+
+        .lds-grid div:nth-child(7) {
+            top: 56px;
+            left: 8px;
+            animation-delay: -0.8s;
+        }
+
+        .lds-grid div:nth-child(8) {
+            top: 56px;
+            left: 32px;
+            animation-delay: -1.2s;
+        }
+
+        .lds-grid div:nth-child(9) {
+            top: 56px;
+            left: 56px;
+            animation-delay: -1.6s;
+        }
+
+        @keyframes lds-grid {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./js/utilities.js"></script>
+    <script src="./libs/SpinePlugin.min.js"></script>
+    <script src="./libs/phaser.min.js"></script>
+    <script type="module" src="./js/game.js"></script>
+    <!--Loading Screen-->
+    <div id="loading-screen">
+
+        <div id="item">
+            <div class="lds-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br />
+            <div id="loading_btn">
+                <h1>Loading... Please wait...</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="phaser-game"></div>
+</body>
+
+</html>
