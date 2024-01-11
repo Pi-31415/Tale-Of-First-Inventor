@@ -92,8 +92,7 @@ class Preloader extends Phaser.Scene {
         this.game.sound.stopAll(); //Stops all Music
         
         this.logo = this.add.image(DEFAULT_WIDTH / 2, DEFAULT_HEIGHT / 2, 'mainmenu_bg');
-        this.logo = this.add.image(1000, 200, 'logo');
-        this.logo.setScale(1);
+        
         preload_complete();
 
         button(this, DEFAULT_WIDTH / 2, DEFAULT_HEIGHT -100, 'button_UI',10, 'Play', 40, 0.5, true, () => { 
@@ -115,7 +114,8 @@ class Preloader extends Phaser.Scene {
 
         this.gear4 = this.add.image(0, 0, 'gear_silhouette');
         this.gear4.setAlpha(0.3);
-
+        this.logo = this.add.image(1000, 400, 'logo');
+        this.logo.setScale(1);
 
     }
 
