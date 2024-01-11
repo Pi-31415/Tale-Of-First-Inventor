@@ -9,6 +9,18 @@ import Scene7 from './scenes/Scene7.js';
 import Scene8 from './scenes/Scene8.js';
 import Scene9 from './scenes/Scene9.js';
 import Scene10 from './scenes/Scene10.js';
+import Scene11 from './scenes/Scene11.js';
+import Scene12 from './scenes/Scene12.js';
+import Scene13 from './scenes/Scene13.js';
+import Scene14 from './scenes/Scene14.js';
+import Scene15 from './scenes/Scene15.js';
+import Scene16 from './scenes/Scene16.js';
+import Scene17 from './scenes/Scene17.js';
+import Scene18 from './scenes/Scene18.js';
+import Scene19 from './scenes/Scene19.js';
+import Scene20 from './scenes/Scene20.js';
+import Scene21 from './scenes/Scene21.js';
+import Scene22 from './scenes/Scene22.js';
 
 const config = {
   type: Phaser.WEBGL,
@@ -45,7 +57,7 @@ const config = {
       }
     ]
   },
-  scene: [Preloader,Scene1,Scene2,Scene3,Scene4,Scene5,Scene6,Scene7,Scene8,Scene9,Scene10]
+  scene: [Preloader,Scene1,Scene2,Scene3,Scene4,Scene5,Scene6,Scene7,Scene8,Scene9,Scene10,Scene11,Scene12,Scene13,Scene14,Scene15,Scene16,Scene17,Scene18,Scene19,Scene20,Scene21,Scene22]
 }
 
 window.addEventListener('load', () => {

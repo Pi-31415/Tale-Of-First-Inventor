@@ -5,9 +5,9 @@ To use this template, change 3 names of Template Scene in class, super and final
 Also change print_scene name
 */
 
-class Scene9 extends Phaser.Scene {
+class Scene12 extends Phaser.Scene {
   constructor() {
-    super({ key: "Scene9" });
+    super({ key: "Scene12" });
   }
 
   preload() {}
@@ -16,13 +16,12 @@ class Scene9 extends Phaser.Scene {
     //Add UI Buttons
        //Add UI Buttons
        button(this, DEFAULT_WIDTH - 250,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Next', 40, 0.5, true, () => { 
-        this.scene.start("Scene10");     
+        this.scene.start("Scene13");     
     });
   
     button(this, 250,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Back', 40, 0.5, true, () => { 
-      this.scene.start("Scene8");  
+      this.scene.start("Scene11");  
   });
-
 button(this, DEFAULT_WIDTH / 2,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Main Menu', 40, 0.5, true, () => { 
     this.cameras.main.fadeOut(1000, 0, 0, 0);
     this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam, effect) => {
@@ -34,11 +33,11 @@ button(this, DEFAULT_WIDTH / 2,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Main Menu'
   }
 
   create() {
-    const currentscene = 9;
+    const currentscene = 12;
     const musicname = "empire";
     var textdisplay =
-    "Moved by love, Suàn shén agreed, but with a solemn warning. \"This knowledge comes from a fraction of my life. Are you willing to share this cosmic duty?\"";
-    var audioname = "movedbylov";
+    "But happiness is often fleeting. Suàn shén began to vanish, her absences growing longer. Téng Hou, consumed by loneliness, confronted her. \"Why do you leave me to this night without moon?\" he asked.";
+    var audioname = "buthappine";
     let result = "";
     var scenename = "scene"+currentscene.toString();
     let n = 110;
@@ -59,7 +58,7 @@ button(this, DEFAULT_WIDTH / 2,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Main Menu'
     }
 
     textdisplay = result;
-    print_scene("Scene9");
+    print_scene("Scene12");
     this.logo = this.add.image(DEFAULT_WIDTH / 2, DEFAULT_HEIGHT / 2, scenename);
 
     this.game.sound.stopAll(); //Stops all Music
@@ -104,4 +103,4 @@ button(this, DEFAULT_WIDTH / 2,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Main Menu'
   }
 }
 
-export default Scene9;
+export default Scene12;

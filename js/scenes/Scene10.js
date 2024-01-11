@@ -14,22 +14,14 @@ class Scene10 extends Phaser.Scene {
 
   add_buttons(currentscene) {
     //Add UI Buttons
-    button(this, DEFAULT_WIDTH - 250,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Next', 40, 0.5, true, () => { 
-      this.cameras.main.fadeOut(1000, 0, 0, 0);
-      this.cameras.main.once(Phaser.Cameras.Scene10D.Events.FADE_OUT_COMPLETE, (cam, effect) => {
-        var nextscene = currentscene + 1;
-        this.scene.start("Scene"+nextscene.toString()); //comment this finally
-      })    
+       //Add UI Buttons
+       button(this, DEFAULT_WIDTH - 250,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Next', 40, 0.5, true, () => { 
+        this.scene.start("Scene11");     
+    });
+  
+    button(this, 250,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Back', 40, 0.5, true, () => { 
+      this.scene.start("Scene9");  
   });
-
-  button(this, 250,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Next', 40, 0.5, true, () => { 
-    this.cameras.main.fadeOut(1000, 0, 0, 0);
-    this.cameras.main.once(Phaser.Cameras.Scene10D.Events.FADE_OUT_COMPLETE, (cam, effect) => {
-      var nextscene = currentscene + 1;
-      this.scene.start("Scene"+nextscene.toString()); //comment this finally
-    })    
-});
-
 button(this, DEFAULT_WIDTH / 2,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Main Menu', 40, 0.5, true, () => { 
     this.cameras.main.fadeOut(1000, 0, 0, 0);
     this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam, effect) => {
@@ -44,8 +36,8 @@ button(this, DEFAULT_WIDTH / 2,DEFAULT_HEIGHT - 100, 'button_UI',10, 'Main Menu'
     const currentscene = 10;
     const musicname = "empire";
     var textdisplay =
-      "Blah";
-    var audioname = "onceuponat";
+    "Téng Hou nodded, his heart resolute. She taught him the language of machines, algorithms, and the secret mathematics that whispered to the universe.";
+    var audioname = "ténghounod";
     let result = "";
     var scenename = "scene"+currentscene.toString();
     let n = 110;

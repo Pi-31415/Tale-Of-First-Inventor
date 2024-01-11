@@ -19,6 +19,20 @@ class Preloader extends Phaser.Scene {
         this.load.image('scene6', 'scene6.png');
         this.load.image('scene7', 'scene7.png');
         this.load.image('scene8', 'scene8.png');
+        this.load.image('scene9', 'scene9.png');
+        this.load.image('scene10', 'scene10.png');
+        this.load.image('scene11', 'scene11.png');
+        this.load.image('scene12', 'scene12.png');
+        this.load.image('scene13', 'scene13.png');
+        this.load.image('scene14', 'scene14.png');
+        this.load.image('scene15', 'scene15.png');
+        this.load.image('scene16', 'scene16.png');
+        this.load.image('scene17', 'scene17.png');
+        this.load.image('scene18', 'scene18.png');
+        this.load.image('scene19', 'scene19.png');
+        this.load.image('scene20', 'scene20.png');
+        this.load.image('scene21', 'scene21.png');
+        this.load.image('scene22', 'scene22.png');
 
         this.load.image('gear_silhouette','gear_silhouette.png');
         this.load.image('dark','dark.jpg');
